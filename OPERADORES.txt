@@ -1,0 +1,38 @@
+OPERADORES
+
+
++  -> Adição
+-  -> Subtração 
+*  -> Multiplicação 
+/  -> Divisão
+%  -> Resto da divisão
+** -> Potenciação (Elevado)
+
+
+- Precedência
+
+1.  ()
+2.  **
+3.  *  /  %
+4.  +  -
+
+
+- Simplificar
+
+var n = 3     
+
+n = n + 4   ->   n += 4
+
+n = n - 5   ->   n -= 5
+
+n = n * 4   ->   n *= 4
+
+
+
+- Incremento
+
+var x = 5
+
+x = x + 1  ->  x++
+
+x = x - 1  ->  x--
