@@ -22,15 +22,16 @@
     <h1>Olá Mundo</h1> 
 
     <script>
+        var nome = prompt('Digite seu nome: ')
         var n1 = Number(prompt('Digite um numero: '))
         var n2 = Number(prompt('Digite outro numero: '))
         var soma = n1+n2
-        alert(`A soma de ${n1} e ${n2} é igual e ${soma}`)
+        alert(`Olá, ${nome}. A soma de ${n1} e ${n2} é igual a ${soma}`)
         /*
             Na concatenação
             (number + number) adição    EX:  2 + 5 = 7
             (string + string) concatena EX:  2 + 5 = 25
-            O comando prompt() salva dados apenas em String, não aceita number.
+            O comando prompt() salva dados apenas em String, não salva em number.
             
             parseInt -> converte para numero inteiro.
             parseFloat -> converte para numero flutuante.
