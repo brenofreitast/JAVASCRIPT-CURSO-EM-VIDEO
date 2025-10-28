@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font: normal 25px Arial;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <script>
+        var nome = prompt('Digite seu nome: ')
+        document.write(`Olá, ${nome}. Seu nome tem ${nome.length} letras.<br>`)
+        document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}.<br/>`)
+        document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}.`)
+
+
+        /*
+            nome.length          ->  Quantas caracteres a string tem.
+            nome.toUpperCase()   ->  Tudo para MAIÚSCULAS.
+            nome.toLowerCase()   ->  Tudo para minúsculas.
+            <br>                 ->  Quebra de linha.
+            num.toFixed(2)       ->  Fixa casas decimais.
+            num.replace('.',',') ->  Troca ponto (.) por virgula (,).
+
+            num.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+            -> Localizar um valor em uma moeda ('BRL', 'USD', 'EUR')
+
+        */
+
+    </script>
+</body>
+</html>
