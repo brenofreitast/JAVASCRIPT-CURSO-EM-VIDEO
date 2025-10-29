@@ -1,38 +1,101 @@
-OPERADORES
+- OPERADORES ARITMÉTICOS E DE ATRIBUIÇÃO:
 
 
-+  -> Adição
--  -> Subtração 
-*  -> Multiplicação 
-/  -> Divisão
-%  -> Resto da divisão
-** -> Potenciação (Elevado)
+    +  -> Adição
+    -  -> Subtração 
+    *  -> Multiplicação 
+    /  -> Divisão
+    %  -> Resto da divisão
+    ** -> Potenciação (Elevado)
 
 
 - Precedência
 
-1.  ()
-2.  **
-3.  *  /  %
-4.  +  -
+    1.  ()
+    2.  **
+    3.  *  /  %
+    4.  +  -
 
 
 - Simplificar
 
-var n = 3     
+    var n = 3     
 
-n = n + 4   ->   n += 4
+    n = n + 4   ->   n += 4
 
-n = n - 5   ->   n -= 5
+    n = n - 5   ->   n -= 5
 
-n = n * 4   ->   n *= 4
+    n = n * 4   ->   n *= 4
 
 
 
 - Incremento
 
-var x = 5
+    var x = 5
 
-x = x + 1  ->  x++
+    x = x + 1  ->  x++
 
-x = x - 1  ->  x--
+    x = x - 1  ->  x--
+
+
+
+
+- OPERADORES RELACIONAIS, LÓGICOS E TERNÁRIOS:
+
+
+RELACIONAIS:
+
+    >   ->  MAIOR
+    <   ->  MENOR
+    >=  ->  MAIOR OU IGUAL
+    <=  ->  MENOR OU IGUAL
+    ==  ->  IGUAL
+    === ->  IGUALDADE IDENTICA (testa se é do mesmo valor e do mesmo tipo)
+    !=  ->  DIFERENTE 
+    
+
+    5 ==   5  -> True
+    5 ==  '5' -> True
+    5 === '5' -> False
+
+
+
+LOGICO:
+
+
+    !   -> NEGAÇÃO
+    &&  -> CONJUNÇÃO (E)
+    ||  -> DISJUNÇÃO (OU)
+
+
+
+TERNÁRIO:
+
+
+    ?
+    :
+
+    TESTE ? TRUE : FALSE
+
+    média >= 6.0  ?  "Aprovado"  :  "Reprovado"
+
+
+
+
+
+- PRECEDÊNCIA
+
+    EX = a > b && b % 2 == 0
+
+    1. OPERADORES ARITMÉTICOS
+    2. OPERADORES RELACIONAIS
+    3. OPERADORES LÓGICOS
+
+
+        PROCEDÊNCIA OPERADORES LÓGICOS
+
+        1. !
+        2. &&
+        3. ||
+
+
