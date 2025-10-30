@@ -4,8 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            background: #379cad;
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Iniciando estudos com DOM</h1>
+    <p>aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+
+    <script>
+        // DOM (Document Object Model) ->
+        var p1 = document.getElementsByTagName("p")[0]              // Capturei o primeiro parágrafo para a variável p1.
+        p1.style.color = 'blue'
+        document.write('<br>Está escrito assim: ' + p1.innerHTML)   // Imprimi ela na tela.
+        
+        var corpo = document.body
+        corpo.style.background = 'black'
+        
+        var d = document.querySelector('div#msg')
+        d.style.color = 'blue'
+        d.style.backgroundColor = 'green'
+        d.style.padding = '8px'
+        d.innerText = 'Estou aguardando...'
+
+
+
+        /*
+            getElementsByTagName()      -> name=''
+            getElementsByClassName()    -> class=''       
+            getElementById()            -> id=''
+            querySelector()             -> 'div#msg'
+
+            obs: 
+            ID    = #
+            CLASS = .
+        */
+
+    </script>
 </body>
 </html>
