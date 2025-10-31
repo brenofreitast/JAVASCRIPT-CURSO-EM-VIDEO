@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <style>
+        *{
+            margin: 5px;
+            padding: 5px;
+        }
+        body{
+            font: normal 12pt Arial;
+            background-color: antiquewhite;
+        }
+        div#res{
+            margin-left: 15px;
+            background: rgba(119, 64, 2, 0.404);
+            color: white;
+            display: inline-block;
+            padding: 10px;
+        }
+        div#input input{
+            border-radius: 8px;
+            width: 60px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Tabuada Multiplicação</h1>
+    <div id="input">
+        <input type="number" name="txn1" id="txn1">
+        <input type="button" value="enviar" style="cursor: pointer;" onclick="tabuada()">
+    </div>
+    <div id="res"></div>
+
+    <script>
+        function tabuada(){
+            var tn1 = document.getElementById("txn1")
+            var n1 = Number(tn1.value)
+            for (i=0;i<11;i++){
+                var multi = n1*i
+                res.innerHTML += `${n1} x ${i} = ${multi}<br><br>`
+                
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
