@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Simples</title>
+</head>
+<body>
+    <h1>Qual a capital do Brasil?</h1>
+    <div id="input">
+        <input type="text" name="tx1" id="tx1">
+        <input type="button" value="enviar" onclick="feedback()">
+    </div>
+    <div id="res">...</div>
+
+    <script>
+        function feedback(){
+            var res = document.getElementById("res")
+            res.innerHTML = ""
+
+            var tx = document.getElementById("tx1").value
+            res.innerHTML = tx == "brasilia" ? "Correto!" : "Errado. Tente novamente."
+
+        }
+    </script>
+
+
+</body>
+</html>
