@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Pais</title>
+</head>
+<body>
+    
+    <h1>Teste Nacionalidade</h1>
+    Digite seu Pais de origem: <input type="text" name="" id="txtp">
+    <input type="button" value="Enviar" onclick="pais()">
+    <div id="res"></div>
+
+
+    <script>
+        function pais(){
+            var p = document.getElementById("txtp").value.toLowerCase()
+            var res = document.getElementById("res")
+            
+            res.innerHTML = p == "brasil" ? 'Você é Brasileiro.' : 'Você é estrangeiro.';
+        }
+    </script>
+
+</body>
+</html>
