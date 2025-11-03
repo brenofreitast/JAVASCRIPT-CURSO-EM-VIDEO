@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Par ou Impar</title>
+    <style>
+        *{
+            font: normal 16pt Arial;
+            margin: 8px;
+        }
+        body{
+            background: rgb(248, 222, 137);
+        }
+        input{
+            width: 100px;
+        }
+        input#enviar{
+            cursor: pointer;
+            width: 70px;
+            font: normal 13pt Arial;
+        }
+        div#res{
+            background: white;
+            display: inline-block;
+            margin-left: 16px;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Par ou Ímpar</h1>
+    <div id="input">
+        <input type="number" name="txn" id="txn1">
+        <input type="button" value="enviar" id="enviar" onclick="par_impar()">
+    </div>
+    <div id="res">...</div>
+
+
+    <script>
+        function par_impar(){
+
+            document.getElementById("res")
+            res.innerHTML = ""
+            var txn = document.getElementById("txn1")
+            var n1 = Number(txn.value)
+
+            if(n1%2==0){
+                res.innerHTML += "Par"
+            }else{
+                res.innerHTML += "Ímpar"
+            }
+        }
+    </script>
+
+</body>
+</html>
