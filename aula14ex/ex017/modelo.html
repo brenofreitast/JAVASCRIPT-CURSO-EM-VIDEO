@@ -3,22 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo</title>
+    <title>Tabuada</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <header>
-        <h1>Título</h1>
+        <h1>Tabuada</h1>
     </header>
 
-    <section>
-        <div>
-            Testando...
+    <section id="principal">
+        <div >
+           Número: <input type="number" name="numero" id="numero">
+           <input type="button" value="Gerar Tabuada" onclick="gerar()">
         </div>
+
+        <section id="tabuada">
+            <p>Digite um número acima.</p>
+        </section>
     </section>
 
     <footer>
-        <p>&copy; Curso em Vídeo</p>
+        <p>&copy; Brenno Tavares</p>
     </footer>
 
     <script src="script.js"></script>
