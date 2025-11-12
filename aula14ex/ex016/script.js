@@ -16,12 +16,18 @@ function contar() {
     } else if (p <= 0) {
         alert('Passo inválido, considerando PASSO 1.')
         p = 1
+            if (ini > f) {
+                for (i = ini; i >= f; i -= p) {
+                    res.innerHTML += `${i} &#128073;`
+                }
+            }
         for (i = ini; i <= f; i += p) {
             res.innerHTML += `${i} &#128073;`
         }
         res.innerHTML += '&#127937;'
 
     } else if (ini > f) {
+        
         for (i = ini; i >= f; i -= p) {
             res.innerHTML += `${i} &#128073;`
         }
