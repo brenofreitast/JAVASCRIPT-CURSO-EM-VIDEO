@@ -5,7 +5,7 @@ function gerar() {
     var num = Number(numero.value)
     var tabuada = document.getElementById('tabuada')
     tabuada.innerHTML = ''
-    var ul = document.createElement('ul')
+    
 
 
     if (num == '') {
@@ -13,11 +13,11 @@ function gerar() {
     } else {
         for (i = 0; i <= 10; i++) {
             var tab = num * i
-            var li = document.createElement('li')
-            li.textContent = `${num} x ${i}= ${tab}`
-            ul.appendChild(li)
+            var options = document.createElement('option')
+            options.textContent = `${num} x ${i}= ${tab}`
+            tabuada.appendChild(options)
         }
-        tabuada.appendChild(ul)
+        
     }
 
 
