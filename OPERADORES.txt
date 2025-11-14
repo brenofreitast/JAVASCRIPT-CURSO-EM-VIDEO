@@ -1,3 +1,7 @@
+Para envelopar código no VS Code, selecione o texto e use o atalho Ctrl + Shift + P 
+para abrir o menu de comandos, digite Emmet: Wrap with Abbreviation e pressione Enter.
+
+
 - OPERADORES ARITMÉTICOS E DE ATRIBUIÇÃO:
 
 
