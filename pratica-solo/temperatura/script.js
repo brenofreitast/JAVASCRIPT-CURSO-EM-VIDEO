@@ -1,43 +1,57 @@
 let txtcelsius = document.getElementById('celsius')
 let txtfahrenheit = document.getElementById('fahrenheit')
 let txtkelvin = document.getElementById('kelvin')
-let converteC
-let converteF
-let converteK
+let n
 
-txtcelsius.addEventListener('keydown', function(event){
-    if (event.key == 'Enter'){
+txtcelsius.addEventListener('keydown', function(event) {
+    if(event.key == 'Enter'){
         event.preventDefault()
-        let celsius = Number(txtcelsius.value)
-        txtfahrenheit.innerText = convertCelsius(celsius)
+        n = Number(txtcelsius.value)
+        txtfahrenheit.value = celsiusToFahrenheit(n).toFixed(2)
+        txtkelvin.value = celsiusToKelvin(n).toFixed(2)
     }
-    
 })
 
 txtfahrenheit.addEventListener('keydown', function(event){
     if (event.key == 'Enter'){
         event.preventDefault()
-        let fahrenheit = Number(txtfahrenheit.value)
+        n = Number(txtfahrenheit.value)
+        txtcelsius.value = fahrenheitToCelsius(n).toFixed(2)
+        txtkelvin.value = fahrenheitToKelvin(n).toFixed(2)
     }
+    
 })
 
 txtkelvin.addEventListener('keydown', function(event){
     if (event.key == 'Enter'){
         event.preventDefault()
-        let kelvin = Number(txtkelvin.value)
+        n = Number(txtkelvin.value)
+        txtcelsius.value = kelvinToCelsius(n).toFixed(2)
+        txtfahrenheit.value = kelvinToFahrenheit(n).toFixed(2)
     }
 })
 
-function convertCelsius(n){
-    return converteF = (n*9/5)+32
+
+function celsiusToFahrenheit(n){
+    return (n*9/5)+32
 }
 
-function convertFahrenheit(n){
-    converteC = (n-32)*5/9
-    converteK = (n-32)*5/9+273.15
+function celsiusToKelvin(n){
+    return n+273.15
 }
 
-function convertKelvin(n){
-    converteC = n-273.15
-    converteF = (n-273.15)*9/5+32
+function fahrenheitToCelsius(n){
+    return (n-32)*5/9
+}
+
+function fahrenheitToKelvin(n){
+    return (n-32)*5/9+273.15
+}
+
+function kelvinToCelsius(n){
+    return n-273.15
+}
+
+function kelvinToFahrenheit(n){
+    return (n-273.15)*9/5+32
 }
