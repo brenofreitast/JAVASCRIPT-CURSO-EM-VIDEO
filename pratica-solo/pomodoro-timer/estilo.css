@@ -1,0 +1,72 @@
+* {
+    font-size: 20pt;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: white;
+    font: normal 15pt Arial;
+}
+
+h1 {
+    font: bold 30pt arial;
+    margin: 90px 0px 50px 0px;
+}
+
+header {
+    color: rgb(56, 56, 56);
+    text-align: center;
+}
+
+#cronometro {
+    margin: 60px;
+    font: normal 55pt arial;
+}
+
+
+#stop {
+    padding: 12px;
+    font: bold 12pt arial;
+    color: white;
+    border: none;
+    background-color: rgb(175, 35, 35);
+    border-radius: 5px;
+    width: 90px;
+    cursor: pointer;
+}
+
+#start {
+    margin-right: 20px;
+    padding: 12px;
+    font: bold 12pt arial;
+    color: white;
+    border: none;
+    background-color: green;
+    border-radius: 5px;
+    width: 90px;
+    cursor: pointer;
+}
+
+#reset {
+    margin-left: 20px;
+    padding: 12px;
+    font: bold 12pt arial;
+    color: white;
+    border: none;
+    background-color: gray;
+    border-radius: 5px;
+    width: 90px;
+    cursor: pointer;
+}
+
+section {
+    color: rgb(56, 56, 56);
+    text-align: center;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
