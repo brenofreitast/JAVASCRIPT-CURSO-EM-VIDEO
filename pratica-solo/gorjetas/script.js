@@ -13,5 +13,7 @@ function calcular(){
         currency: 'BRL'
     })
     res.style.fontWeight = 'bold'
-    res.innerHTML += formatado
+    res.style.fontSize = '17pt'
+    res.innerHTML = ''
+    res.innerHTML = formatado
 }

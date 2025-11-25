@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    font: normal 12pt arial;
 }
 
 body{
@@ -17,9 +18,40 @@ section{
     background: white;
     border-radius: 10px;
     padding: 15px;
-    width: 600px;
+    width: 580px;
     margin: auto;
+    margin-top: 90px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.164);
+}
+
+h1{
+    margin: 20px 0px 18px 0px;
+    text-align: center;
+    font: bold 25pt arial;
+}
+
+p{
+    margin: 15px 0px 15px 0px;
+}
+
+input{
+    margin: 10px 0px 10px 0px;
+    font: normal 10pt arial;
+    height: 20px;
+    width: 555px;
+    border: 1.9px solid rgba(128, 128, 128, 0.267);
+    border-radius: 3px;
+    padding: 8px;
+}
+
+input#calcular{
+    height: 40px;
+    border: none;
+    background-color: rgb(84, 196, 84);
+    color: white;
+    font: normal 14pt arial;
+    width: 570px;
+    border-radius: none;
 }
 
 footer{
