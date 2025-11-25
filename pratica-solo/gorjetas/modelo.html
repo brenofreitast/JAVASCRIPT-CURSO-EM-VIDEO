@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1></h1>
+    </header>
+
+    <section>
+        <h1>Calculadora de gorjetas</h1>
+        <p>Insira o valor da conta e a porcentagem da gorjeta para calcular o total.</p>
+        
+        <label for="fatura">Valor da fatura:</label>
+        <div><input type="number" id="fatura"></div>
+        <label for="percen">Percentual de gorjeta:</label>
+        <div><input type="number" id="percen"></div>
+
+        <input type="button" value="CALCULAR" onclick="calcular()">
+        <div>Total: <span id="res"></span></div>
+    </section>
+
+    <footer>
+        <p>&copy; Curso em Vídeo</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
