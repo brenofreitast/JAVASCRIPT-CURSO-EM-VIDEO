@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modelo</title>
     <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header>
         <h1></h1>
@@ -13,8 +20,8 @@
 
     <section>
         <h1>Conversor de Peso</h1>
-        <div><label for="kg">Quilograma: </label><input type="number" id="kg"></div>
-        <div><label for="lb">Libra: <input type="number" id="lb"></label></div>
+        <div id="input"><label for="kg">Quilograma: </label><input type="number" id="kg" placeholder="Digite um peso"></div>
+        <div id="input"><label for="lb">Libra: <input type="number" id="lb" placeholder="Digite um peso"></label></div>
 
         <div id="res"></div>
     </section>
@@ -27,4 +34,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
