@@ -47,9 +47,9 @@ header{
 }
 
 
-section{
+#conteudo{
     position: absolute;
-    top: 50%;
+    top: 80%;
     left: 55%;
     transform: translate(-50%, -50%);
 }
@@ -67,6 +67,10 @@ p{
 
 img{
     width: 550px;
+    position: absolute;
+    top: 40%;
+    left: 55%;
+    transform: translate(-50%, -50%);
     
 }
 
@@ -87,10 +91,9 @@ input:hover{
 
 footer{
     color: white;
-    text-align: center;
     font-style: italic;
     position: absolute;
-    top: 95%;
+    top: 97%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
