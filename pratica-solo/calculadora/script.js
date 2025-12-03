@@ -9,7 +9,7 @@ btt.forEach(botao =>{
             tela.value = ''
         }else if (action == 'equal'){
             try{
-                tela.value = eval(tela.value)   // calcula a expressão
+                tela.value = eval(tela.value)   // eval() calcula a expressão
             }catch{
                 tela.value = 'Erro'
             }
